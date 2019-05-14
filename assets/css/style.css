@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Noticia+Text|Material+Icons');
+
+p, strong, a, a:focus, a:hover, ol, li, td, thead, ul, b, strong, label, .btn, figcaption, .figure-caption, .dropdown-item {
+  font-family: 'Questrial', sans-serif;
+  text-align: left;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, i {
+  font-family: 'Noticia Text', serif;
+  text-align: left;
+  color: white;
+}
+
+form button a {
+  text-decoration: none;
+}
+
+/*css untuk id dan elemen dasar*/
+
+body {
+  background: #913D88;
+}
+
+label, input, select {
+    display: table-row-group;
+}
+
+label {
+  color: white;
+}
+
+hr {
+  background-color: white;
+}
+
+#landing, #kontak, #masuk {
+  padding: 20px;
+}
+
+#landing, #keluar {
+  height: 581px;
+  background-color: #913D88;
+  padding: 30px;
+}
+
+#nav-footer, #copyright {
+  background-color: #674172;
+  padding: 20px;
+}
+
+#konten-1, #konten-2 {
+  padding: 5px;
+  margin: 10px;  
+}
+
+#programming, #kupas, #siber, #media, #highlight-sisimedia, #rekomendasi, #banyak-dibaca {
+    max-height: 2500px;
+    padding: 10px;
+}
+
+#list-artikel {
+    border: thin white solid;
+    border-radius: 5px;
+    display: block;
+    max-width: 400px;
+    max-height: 450px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#list-kontributor {
+
+}
+
+#komentar {
+
+}
+
+#info-user {
+    max-width: 500px;
+    max-height: 1500px;
+    display: block;
+    margin: auto;
+}
+
+#statistik {
+    border: thin white solid;
+    border-radius: 5px;
+    width: 550px;
+    height: 700px;
+    padding: 15px;
+    margin: 10px;
+}
+
+#konten-2, #konten-3 {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+}
+
+#form-admin {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#masuk {
+  height: 600px;
+}
+
+#content-dashboard, #nav-dashboard {
+  margin: 25px;
+}
+
+#konten {
+  padding: 25px;
+}
+
+#btn-keatas {
+  display: none;
+  border: thin white solid;
+  border-radius: 5px;
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+#meta-konten, #data-diri {
+    padding: 20px;
+    max-height: max-content;
+    position: relative;
+    display: block;
+    color: white;
+    background-color: #8E44AD;
+}
+
+#isi-konten {
+    display: initial;
+    padding: 5px;
+}
+
+#card-infografis {
+    overflow: hidden;
+    max-width: 300px; 
+    padding: 10px;
+    display: inline-table;
+    color: white;
+}
+
+#tulisan-dari-penulis {
+    max-height: 600px;
+    margin: 15px;
+}
+
+/*css untuk class*/
+.content-footer {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.logo-polos {
+  width: 200px;
+  height: 70px;
+}
+
+.admin-input {
+  background-color: #913D88;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  padding: 5px; 
+  color: white;
+}
+
+.logo-sosmed {
+  width: 72px;
+  height: 72px;
+}
+
+.people {
+  padding: 3px;
+}
+
+.konten-modal, .dropdown-menu {
+  background-color: #913D88;
+}
+
+.banner {
+  padding: 10px;
+}
+
+.judul-caption {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  border: white thin solid;
+}
+
+.gambar-pendukung {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.input-buat {
+  border: none;
+  background-color: #446CB3;
+  border-bottom: thin white solid;
+  outline: none;
+  color: white;
+}
+
+.text-alert {
+  color: black;
+  padding: 3px;
+}
+
+.btn-edited {
+    border: thin white solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.btn-edited:hover, .btn-edited:focus {
+    border: thin white solid;
+    border-radius: 5px;
+    background-color: #674172;
+    padding: 10px;
+    color: white;
+    outline: none;
+}
+
+.alert-edited {
+    border: thin white solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.inline-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.form-konten {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.placeholder-shown {
+  transition: all 500ms;
+  top: 0;
+  position: absolute;
+  padding: 7px 0 0 13px;
+  opacity: 0.90;
+}
+
+.placeholder-shown:focus + .placeholder-shown-code,
+.placeholder-shown:valid + .placeholder-shown-code {
+  transform: translate3d(0, -100%, 0);
+  font-size: 75%;
+}
+
+.img-avatar {
+  width: 200px;
+  height: auto;
+}
+
+.img-infografis {
+  height: 500px; 
+  display: block;
+  margin: auto; 
+  width:300px
+}
+
+.body-pelayanrakyat {
+  background-color: #446CB3;
+}
+
+.navbar-pelayanrakyat, .footer-pelayanrakyat {
+  background-color: #22A7F0;
+  padding: 10px;
+}
+
+.konten-modal-pelayanrakyat, .dropdown-menu-pelayanrakyat {
+  background-color: #446CB3;
+}
+
+.dropdown-item-pelayanrakyat:hover, .dropdown-item-pelayanrakyat:focus  {
+  background-color: #22A7F0;
+  color: white;
+}
+
+.carousel-sisisilang {
+    max-width: 1363px;
+    max-height: 400px;
+    margin: 5px;
+}
+
+.card-batas {
+    width: 270px;
+    height: 450px;
+    margin: 5px;
+    border: thin white solid;
+    display: inline-grid;
+    padding: 5px;
+}
+
+.card-batas2 {
+  padding: 5px;
+}
+
+.card-batas-penulis {
+    width: 270px;
+    max-height: 800px;
+    margin: 5px;
+    border: thin white solid;
+    display: inline-grid;
+    padding: 5px;
+}
+
+.card-penulis {
+    padding: 5px;
+    max-height: 500px;
+    max-width: 300px;
+}
+
+.card-halamanutama {
+    max-width: 350px;
+    height: 400px;
+    margin: auto;
+    border: thin white solid;
+    display: inline-grid;
+    padding: 5px;
+}
+
+.img-infografisview {
+    max-width: 500px;
+    max-height: 1500px;
+    display: block;
+    margin: auto;
+}
+
+.img-narasiview {
+    margin: auto;
+    display: block;
+}
+
+.advertise {
+    max-width: 500px;
+    max-height: 1500px;
+    display: block;
+    margin: auto;
+}
+
+.isi-konten {
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.komentar {
+    max-width: 500px;
+    display: block;
+    max-height: 800px;
+}
+
+.blok-tulisan {
+    padding: 10px;
+    margin: 5px;
+    border: 0.25px white solid;
+    display: flex;
+    position: relative;
+    max-width: 300px;
+}
+
+.card-kupas {
+    max-width: 550px;
+    height: 500px;
+    border: thin white solid;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+}
